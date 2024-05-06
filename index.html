@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Filter Extension</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+   
+    </style>
+</head>
+<body>
+    <div class="container mx-auto p-4">
+        <h1 class="text-2xl font-bold mb-4">WhatsApp Filter Extension</h1>
+        <nav class="flex justify-between items-center mb-4">
+            <div class="flex">
+                <button id="filterAllBtn" class="px-4 py-2 mr-2 bg-gray-200 text-gray-700 rounded">All</button>
+                <button id="filterUnreadBtn" class="px-4 py-2 mr-2 bg-gray-200 text-gray-700 rounded">Unread</button>
+                <button id="filterAwaitingReplyBtn" class="px-4 py-2 mr-2 bg-gray-200 text-gray-700 rounded">Awaiting Reply</button>
+                <button id="filterNeedsReplyBtn" class="px-4 py-2 bg-gray-200 text-gray-700 rounded">Needs Reply</button>
+            </div>
+            <div>
+                <button id="openContactBtn" class="px-4 py-2 bg-blue-500 text-white rounded mr-2">Open Contact</button>
+                <button id="saveNoteBtn" class="px-4 py-2 bg-green-500 text-white rounded">Save Note</button>
+            </div>
+        </nav>
+    
+        <div class="mb-4">
+            <label for="customFilterInput" class="block font-semibold">Create Custom Filter:</label>
+            <input type="text" id="customFilterInput" class="px-4 py-2 border rounded">
+            <button id="createCustomFilterBtn" class="ml-2 px-4 py-2 bg-blue-500 text-white rounded">Create</button>
+        </div>
+ 
+        <div id="filteredChats" class="mb-4">
+        
+        </div>
+    </div>
+
+
+    <script src="popup.js"></script>
+</body>
+</html>
